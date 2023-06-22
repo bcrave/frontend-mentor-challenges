@@ -5,11 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Home from "./components/Home";
-import About from "./components/About";
+import Home from "./pages/Home";
+import QrCode from "./pages/QrCode";
 
 import RootLayout from "./layouts/RootLayout";
-import SolutionsLayout from "./layouts/SolutionsLayout";
 
 import "./styles/App.scss";
 
@@ -17,8 +16,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="solutions" element={<SolutionsLayout />}></Route>
+      <Route path="qr-code" element={<QrCode />} />
     </Route>
   )
 );
