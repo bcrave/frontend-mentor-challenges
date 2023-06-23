@@ -3,9 +3,9 @@ import img from "../assets/image-qr-code.png";
 
 export default function Card() {
   return (
-    <div className="card-wrapper">
+    <section className="card-wrapper">
       <div className="content">
-        <img src={img} />
+        <img src={img} alt="QR code with link to Frontend Mentor" />
         <div className="text">
           <h2>Improve your front-end skills by building projects</h2>
           <p>
@@ -14,6 +14,6 @@ export default function Card() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

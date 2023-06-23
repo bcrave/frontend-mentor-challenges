@@ -33,7 +33,7 @@ export default function RootLayout() {
   }, [location]);
 
   return (
-    <div
+    <main
       className="root-layout"
       style={{ backgroundColor: styles.backgroundColor }}
     >
@@ -44,6 +44,6 @@ export default function RootLayout() {
       </nav>
 
       <Outlet />
-    </div>
+    </main>
   );
 }
