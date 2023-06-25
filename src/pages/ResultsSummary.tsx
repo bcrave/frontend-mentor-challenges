@@ -55,9 +55,12 @@ export default function ResultsSummary() {
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
+
         <div className="summary">
           <h2>Summary</h2>
+
           {renderData()}
+
           <button>Continue</button>
         </div>
       </div>
