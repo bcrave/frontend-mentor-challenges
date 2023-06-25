@@ -7,6 +7,9 @@ export default function Home() {
         <li>
           <Link to="qr-code">QR Code</Link>
         </li>
+        <li>
+          <Link to="results-summary">Results Summary</Link>
+        </li>
       </ul>
     </div>
   );

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+/* Layout */
+$paragraphFontSize: 18px;
+$padding: 1.875rem;
+
+/* Primary */
+$lightRed: hsl(0, 100%, 67%);
+$orangeYellow: hsl(39, 100%, 56%);
+$greenTeal: hsl(166, 100%, 37%);
+$cobaltBlue: hsl(234, 85%, 45%);
+
+/* Gradients */
+$backgroundSlateBlue: hsl(252, 100%, 67%);
+$backgroundRoyalBlue: hsl(241, 81%, 54%);
+$circleVioletBlue: hsla(256, 72%, 46%, 1);
+$circlePersianBlue: hsl(234, 85%, 45%);
+
+/* Neutral */
+$white: hsl(0, 0%, 100%);
+$paleBlue: hsl(221, 100%, 96%);
+$lightLavender: hsl(241, 100%, 89%);
+$darkGrayBlue: hsl(224, 30%, 27%);
+
+.page-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.results-summary {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: -1.5rem -1.5rem 0;
+  max-width: 612px;
+
+  .score {
+    height: 350px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding calc($padding + 1rem);
+    border-bottom-left-radius: 1.7rem;
+    border-bottom-right-radius: 1.7rem;
+    background-image: linear-gradient(
+      $backgroundSlateBlue,
+      $backgroundRoyalBlue
+    );
+
+    h1 {
+      font-size: $paragraphFontSize;
+      margin: 0;
+      color: $lightLavender;
+    }
+
+    .circle {
+      border-radius: 50%;
+      background-image: linear-gradient(
+        $circleVioletBlue,
+        rgba($circlePersianBlue, 0.005)
+      );
+      height: 8.75rem;
+      width: 8.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        color: rgba($lightLavender, 0.7);
+        font-weight: 500;
+      }
+    }
+
+    h2 {
+      color: $white;
+      margin: 0;
+      font-size: 1.75rem;
+    }
+
+    p {
+      margin: 0;
+      color: $lightLavender;
+    }
+  }
+
+  .summary {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: $padding;
+    // margin-bottom: 1.5rem;
+
+    h2 {
+      margin-top: 0;
+      font-weight: 700;
+      color: $darkGrayBlue;
+      text-align: left;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    ul.score-data {
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0;
+        border-radius: 6px;
+        padding: 1rem;
+
+        &:nth-of-type(1) {
+          background-color: rgba($lightRed, 0.075);
+
+          .left {
+            color: $lightRed;
+          }
+        }
+        &:nth-of-type(2) {
+          background-color: rgba($orangeYellow, 0.075);
+
+          .left {
+            color: $orangeYellow;
+          }
+        }
+        &:nth-of-type(3) {
+          background-color: rgba($greenTeal, 0.075);
+
+          .left {
+            color: $greenTeal;
+          }
+        }
+        &:nth-of-type(4) {
+          background-color: rgba($cobaltBlue, 0.075);
+
+          .left {
+            color: $cobaltBlue;
+          }
+        }
+
+        .left {
+          display: flex;
+          gap: 1rem;
+        }
+
+        .right {
+          font-weight: 700;
+          color: $darkGrayBlue;
+
+          span {
+            color: rgba($darkGrayBlue, 0.5);
+          }
+        }
+      }
+    }
+
+    button {
+      margin-top: 0.5rem;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 2.5rem;
+      border: none;
+      background-color: $darkGrayBlue;
+      color: $white;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (min-width: 426px) {
+  .results-summary {
+    height: 440px;
+    width: 85%;
+    border-radius: 1.7rem;
+    margin: 0 auto;
+
+    flex-direction: row;
+    align-items: center;
+
+    -webkit-box-shadow: 5px 5px 15px 5px rgba($backgroundRoyalBlue, 0.1);
+    box-shadow: 5px 5px 15px 5px rgba($backgroundRoyalBlue, 0.1);
+
+    .score {
+      height: 100%;
+      border-radius: 1.7rem;
+
+      .circle {
+        height: 11rem;
+        width: 11rem;
+      }
+
+      p.comparison {
+        margin-top: -1.5rem;
+      }
+    }
+  }
+}

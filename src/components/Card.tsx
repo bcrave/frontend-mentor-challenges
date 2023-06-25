@@ -1,5 +1,5 @@
 import "../styles/components/card.scss";
-import img from "../assets/image-qr-code.png";
+import img from "../../public/images/image-qr-code.png";
 
 export default function Card() {
   return (

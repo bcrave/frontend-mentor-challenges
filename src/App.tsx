@@ -7,6 +7,7 @@ import {
 
 import Home from "./pages/Home";
 import QrCode from "./pages/QrCode";
+import ResultsSummary from "./pages/ResultsSummary";
 
 import RootLayout from "./layouts/RootLayout";
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="qr-code" element={<QrCode />} />
+      <Route path="results-summary" element={<ResultsSummary />} />
     </Route>
   )
 );

@@ -19,6 +19,10 @@ const rootStyles: StyleOptions = {
     backgroundColor: "hsl(212, 45%, 89%)",
     color: "hsl(218, 44%, 22%)",
   },
+  "/results-summary": {
+    backgroundColor: "hsl(0, 0%, 100%)",
+    color: "hsl(221, 100%, 96%)",
+  },
 };
 
 export default function RootLayout() {
@@ -37,13 +41,15 @@ export default function RootLayout() {
       className="root-layout"
       style={{ backgroundColor: styles.backgroundColor }}
     >
-      <nav className="nav-links">
-        <NavLink to="/" style={{ color: styles.color }}>
-          Home
-        </NavLink>
-      </nav>
+      <div className="root-content">
+        {/* <nav className="nav-links">
+          <NavLink to="/" style={{ color: styles.color }}>
+            Home
+          </NavLink>
+        </nav> */}
 
-      <Outlet />
+        <Outlet />
+      </div>
     </main>
   );
 }
