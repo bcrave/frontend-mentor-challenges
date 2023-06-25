@@ -42,12 +42,6 @@ export default function RootLayout() {
       style={{ backgroundColor: styles.backgroundColor }}
     >
       <div className="root-content">
-        {/* <nav className="nav-links">
-          <NavLink to="/" style={{ color: styles.color }}>
-            Home
-          </NavLink>
-        </nav> */}
-
         <Outlet />
       </div>
     </main>
