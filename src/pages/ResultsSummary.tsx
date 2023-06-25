@@ -21,7 +21,7 @@ export default function ResultsSummary() {
         {data.map(({ category, score, icon }) => (
           <li key={category}>
             <div className="left">
-              <img src={icon} />
+              <img src={icon} alt="score data icon" />
               <div>{category}</div>
             </div>
 
