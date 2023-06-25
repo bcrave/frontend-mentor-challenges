@@ -176,6 +176,12 @@ $darkGrayBlue: hsl(224, 30%, 27%);
 }
 
 @media (min-width: 426px) {
+  .results-summary {
+    margin: -1.5rem auto 0;
+  }
+}
+
+@media (min-width: 702px) {
   .page-wrapper {
     height: 100%;
     display: flex;
