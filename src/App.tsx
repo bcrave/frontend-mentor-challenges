@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import QrCode from "./pages/QrCode";
 import ResultsSummary from "./pages/ResultsSummary";
 import ProductPreview from "./pages/ProductPreview";
+import InteractiveRating from "./pages/InteractiveRating";
 
 import RootLayout from "./layouts/RootLayout";
 
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="qr-code" element={<QrCode />} />
       <Route path="results-summary" element={<ResultsSummary />} />
       <Route path="product-preview" element={<ProductPreview />} />
+      <Route path="interactive-rating" element={<InteractiveRating />} />
     </Route>
   )
 );

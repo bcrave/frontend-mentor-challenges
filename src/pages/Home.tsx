@@ -13,6 +13,9 @@ export default function Home() {
         <li>
           <Link to="product-preview">Product Preview</Link>
         </li>
+        <li>
+          <Link to="interactive-rating">Interactive Rating</Link>
+        </li>
       </ul>
     </div>
   );

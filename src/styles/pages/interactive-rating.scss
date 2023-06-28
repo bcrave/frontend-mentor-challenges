@@ -1,0 +1,145 @@
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+$paragraph: 15px;
+
+/* Colors */
+/* Primary */
+$orange: hsl(25, 97%, 53%);
+
+/* Neutral */
+$white: hsl(0, 0%, 100%);
+$lightGray: hsl(217, 12%, 63%);
+$mediumGray: hsl(216, 12%, 54%);
+$mediumBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+.circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba($lightGray, 0.1);
+  color: $lightGray;
+}
+
+.interactive-rating {
+  margin: 0 auto;
+  height: 365px;
+  width: 330px;
+  background-image: linear-gradient($mediumBlue, $veryDarkBlue);
+  padding: 1.5rem;
+  color: $white;
+  font-family: "Overpass", sans-serif;
+  border-radius: 0.75rem;
+
+  .content {
+    height: 100%;
+
+    h1 {
+      text-align: left;
+      font-size: 1.5em;
+      margin-bottom: 0.75rem;
+    }
+
+    .success {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        margin-bottom: 0.5rem;
+      }
+
+      p:nth-of-type(1) {
+        background-color: rgba($mediumGray, 0.1);
+        color: rgba($orange, 0.75);
+        padding: 0.5rem;
+        border-radius: 1.5rem;
+        font-size: $paragraph;
+        width: 75%;
+      }
+      p:nth-of-type(2) {
+        margin-top: 0;
+        color: $lightGray;
+        font-size: $paragraph;
+        line-height: 1.5rem;
+      }
+    }
+
+    .star-container {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: rgba($mediumGray, 0.25);
+
+      img {
+        width: 1rem;
+      }
+    }
+
+    .text {
+      margin-bottom: 1.5rem;
+
+      p {
+        text-align: left;
+        color: $mediumGray;
+        font-size: $paragraph;
+        line-height: 1.5em;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .circles-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+
+        .circle {
+          input[type="radio"] {
+            display: none;
+          }
+
+          &:hover {
+            cursor: pointer;
+            background-color: $orange;
+            color: $white;
+          }
+
+          &.checked {
+            background-color: $lightGray;
+            color: $white;
+          }
+        }
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: $orange;
+        color: rgba($white, 0.8);
+        border: none;
+        border-radius: 2rem;
+        padding: 0.75rem;
+        font-size: $paragraph;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        &:hover {
+          background-color: $white;
+          color: $orange;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

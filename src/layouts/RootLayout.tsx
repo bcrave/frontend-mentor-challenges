@@ -27,6 +27,10 @@ const rootStyles: StyleOptions = {
     backgroundColor: "hsl(30, 38%, 92%)",
     color: "hsl(212, 21%, 14%)",
   },
+  "/interactive-rating": {
+    backgroundColor: "#000",
+    color: "#fff",
+  },
 };
 
 export default function RootLayout() {
