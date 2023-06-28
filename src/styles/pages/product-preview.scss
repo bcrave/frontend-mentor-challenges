@@ -29,7 +29,6 @@ $white: hsl(0, 0%, 100%);
     .img-wrapper {
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
-      background-image: url("../../assets/images/image-product-mobile.jpg");
 
       img {
         width: calc(100% + 3rem);
@@ -134,6 +133,17 @@ $white: hsl(0, 0%, 100%);
 
       .text-wrapper {
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+          margin: 0;
+        }
+
+        p:nth-of-type(2) {
+          margin-top: 0;
+        }
       }
     }
   }
