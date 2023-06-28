@@ -178,8 +178,10 @@ $darkGrayBlue: hsl(224, 30%, 27%);
   }
 }
 @media (min-width: 426px) {
-  .content {
-    margin: -1.5rem auto 0;
+  .results-summary {
+    .content {
+      margin: -1.5rem auto 0;
+    }
   }
 }
 
