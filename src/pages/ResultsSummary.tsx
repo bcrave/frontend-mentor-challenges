@@ -38,8 +38,8 @@ export default function ResultsSummary() {
   };
 
   return (
-    <div className="page-wrapper">
-      <div className="results-summary">
+    <div className="results-summary">
+      <div className="content">
         <div className="score">
           <h1>Your Result</h1>
 

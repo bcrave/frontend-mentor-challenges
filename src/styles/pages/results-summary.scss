@@ -23,170 +23,173 @@ $lightLavender: hsl(241, 100%, 89%);
 $darkGrayBlue: hsl(224, 30%, 27%);
 
 .results-summary {
-  font-family: "Hanken Grotesk", sans-serif;
-  display: flex;
-  flex-direction: column;
-  margin: -1.5rem -1.5rem 0;
-  max-width: 612px;
+  height: 100%;
 
-  .score {
-    height: 350px;
-    width: 100%;
-    box-sizing: border-box;
-
+  .content {
+    font-family: "Hanken Grotesk", sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    // margin: -1.5rem -1.5rem 0;
+    max-width: 612px;
 
-    padding: $padding calc($padding + 1rem);
-    border-bottom-left-radius: 1.7rem;
-    border-bottom-right-radius: 1.7rem;
-    background-image: linear-gradient(
-      $backgroundSlateBlue,
-      $backgroundRoyalBlue
-    );
+    .score {
+      height: 350px;
+      width: 100%;
+      box-sizing: border-box;
 
-    h1 {
-      font-size: $paragraphFontSize;
-      margin: 0;
-      color: $lightLavender;
-    }
-
-    .circle {
-      border-radius: 50%;
-      background-image: linear-gradient(
-        $circleVioletBlue,
-        rgba($circlePersianBlue, 0.005)
-      );
-      height: 8.75rem;
-      width: 8.75rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: space-between;
+
+      padding: $padding calc($padding + 1rem);
+      border-bottom-left-radius: 1.7rem;
+      border-bottom-right-radius: 1.7rem;
+      background-image: linear-gradient(
+        $backgroundSlateBlue,
+        $backgroundRoyalBlue
+      );
+
+      h1 {
+        font-size: $paragraphFontSize;
+        margin: 0;
+        color: $lightLavender;
+      }
+
+      .circle {
+        border-radius: 50%;
+        background-image: linear-gradient(
+          $circleVioletBlue,
+          rgba($circlePersianBlue, 0.005)
+        );
+        height: 8.75rem;
+        width: 8.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          font-size: 3.5rem;
+        }
+
+        p {
+          color: rgba($lightLavender, 0.7);
+          font-weight: 500;
+        }
+      }
 
       h2 {
-        font-size: 3.5rem;
+        color: $white;
+        margin: 0;
+        font-size: 1.75rem;
       }
 
       p {
-        color: rgba($lightLavender, 0.7);
-        font-weight: 500;
+        margin: 0;
+        color: $lightLavender;
       }
     }
 
-    h2 {
-      color: $white;
-      margin: 0;
-      font-size: 1.75rem;
-    }
-
-    p {
-      margin: 0;
-      color: $lightLavender;
-    }
-  }
-
-  .summary {
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    padding: $padding;
-
-    h2 {
-      margin-top: 0;
-      font-weight: 700;
-      color: $darkGrayBlue;
-      text-align: left;
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-
-    ul.score-data {
-      padding: 0;
-      list-style-type: none;
-
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 1rem 0;
-        border-radius: 6px;
-        padding: 1rem;
-
-        &:nth-of-type(1) {
-          background-color: rgba($lightRed, 0.075);
-
-          .left {
-            color: $lightRed;
-          }
-        }
-        &:nth-of-type(2) {
-          background-color: rgba($orangeYellow, 0.075);
-
-          .left {
-            color: $orangeYellow;
-          }
-        }
-        &:nth-of-type(3) {
-          background-color: rgba($greenTeal, 0.075);
-
-          .left {
-            color: $greenTeal;
-          }
-        }
-        &:nth-of-type(4) {
-          background-color: rgba($cobaltBlue, 0.075);
-
-          .left {
-            color: $cobaltBlue;
-          }
-        }
-
-        .left {
-          display: flex;
-          gap: 1rem;
-        }
-
-        .right {
-          font-weight: 700;
-          color: $darkGrayBlue;
-
-          span {
-            color: rgba($darkGrayBlue, 0.5);
-          }
-        }
-      }
-    }
-
-    button {
-      margin-top: 0.5rem;
+    .summary {
+      box-sizing: border-box;
+      height: 100%;
       width: 100%;
-      padding: 1rem;
-      border-radius: 2.5rem;
-      border: none;
-      background-color: $darkGrayBlue;
-      color: $white;
-      font-size: 1.2rem;
-      font-weight: 700;
+      padding: $padding;
+
+      h2 {
+        margin-top: 0;
+        font-weight: 700;
+        color: $darkGrayBlue;
+        text-align: left;
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      ul.score-data {
+        padding: 0;
+        list-style-type: none;
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 1rem 0;
+          border-radius: 6px;
+          padding: 1rem;
+
+          &:nth-of-type(1) {
+            background-color: rgba($lightRed, 0.075);
+
+            .left {
+              color: $lightRed;
+            }
+          }
+          &:nth-of-type(2) {
+            background-color: rgba($orangeYellow, 0.075);
+
+            .left {
+              color: $orangeYellow;
+            }
+          }
+          &:nth-of-type(3) {
+            background-color: rgba($greenTeal, 0.075);
+
+            .left {
+              color: $greenTeal;
+            }
+          }
+          &:nth-of-type(4) {
+            background-color: rgba($cobaltBlue, 0.075);
+
+            .left {
+              color: $cobaltBlue;
+            }
+          }
+
+          .left {
+            display: flex;
+            gap: 1rem;
+          }
+
+          .right {
+            font-weight: 700;
+            color: $darkGrayBlue;
+
+            span {
+              color: rgba($darkGrayBlue, 0.5);
+            }
+          }
+        }
+      }
+
+      button {
+        margin-top: 0.5rem;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 2.5rem;
+        border: none;
+        background-color: $darkGrayBlue;
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
     }
   }
 }
-
 @media (min-width: 426px) {
-  .results-summary {
+  .content {
     margin: -1.5rem auto 0;
   }
 }
 
 @media (min-width: 702px) {
-  .page-wrapper {
+  .results-summary {
     height: 100%;
     display: flex;
     align-items: center;
 
-    .results-summary {
+    .content {
       height: 440px;
       width: 85%;
       border-radius: 1.7rem;
