@@ -4,13 +4,16 @@
 
   height: 100%;
   box-sizing: border-box;
-  padding: 1.5rem;
 
   .root-content {
     max-width: 1280px;
     margin: 0 auto;
     width: 100%;
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .nav-links {
       text-align: left;

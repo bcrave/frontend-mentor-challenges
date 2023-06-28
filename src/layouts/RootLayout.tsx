@@ -23,6 +23,10 @@ const rootStyles: StyleOptions = {
     backgroundColor: "hsl(0, 0%, 100%)",
     color: "hsl(221, 100%, 96%)",
   },
+  "/product-preview": {
+    backgroundColor: "hsl(30, 38%, 92%)",
+    color: "hsl(212, 21%, 14%)",
+  },
 };
 
 export default function RootLayout() {

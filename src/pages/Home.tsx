@@ -10,6 +10,9 @@ export default function Home() {
         <li>
           <Link to="results-summary">Results Summary</Link>
         </li>
+        <li>
+          <Link to="product-preview">Product Preview</Link>
+        </li>
       </ul>
     </div>
   );
