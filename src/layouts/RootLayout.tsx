@@ -31,6 +31,10 @@ const rootStyles: StyleOptions = {
     backgroundColor: "#000",
     color: "#fff",
   },
+  "/nft-preview": {
+    backgroundColor: "hsl(217, 54%, 11%)",
+    color: "hsl(0, 0%, 100%)",
+  },
 };
 
 export default function RootLayout() {
@@ -47,7 +51,7 @@ export default function RootLayout() {
   return (
     <main
       className="root-layout"
-      style={{ backgroundColor: styles.backgroundColor }}
+      style={{ backgroundColor: styles.backgroundColor, color: styles.color }}
     >
       <div className="root-content">
         <Outlet />

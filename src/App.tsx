@@ -10,6 +10,7 @@ import QrCode from "./pages/QrCode";
 import ResultsSummary from "./pages/ResultsSummary";
 import ProductPreview from "./pages/ProductPreview";
 import InteractiveRating from "./pages/InteractiveRating";
+import NftPreview from "./pages/NftPreview";
 
 import RootLayout from "./layouts/RootLayout";
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="results-summary" element={<ResultsSummary />} />
       <Route path="product-preview" element={<ProductPreview />} />
       <Route path="interactive-rating" element={<InteractiveRating />} />
+      <Route path="nft-preview" element={<NftPreview />} />
     </Route>
   )
 );

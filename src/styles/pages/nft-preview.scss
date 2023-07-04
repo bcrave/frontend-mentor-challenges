@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+$paragraph: calc(1rem + 2px);
+$cardBg: hsl(216, 50%, 16%);
+$lineBlue: hsl(215, 32%, 27%);
+$softBlue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+.nft-preview {
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: $cardBg;
+  border-radius: 1rem;
+  font-family: "Outfit", sans-serif;
+
+  .content {
+    width: 17.5rem;
+
+    .img-wrapper {
+      width: 100%;
+      border-radius: 0.5rem;
+      height: 17.5rem;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        .overlay {
+          background-color: rgba($cyan, 0.5);
+
+          .eye {
+            opacity: 1;
+          }
+        }
+      }
+
+      .overlay {
+        background-color: $cyan;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        position: absolute;
+        background-color: transparent;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .eye {
+          width: 3rem;
+          opacity: 0;
+        }
+      }
+
+      img {
+        width: 100%;
+        border-radius: inherit;
+      }
+    }
+
+    h1,
+    p {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+        color: $cyan;
+      }
+    }
+
+    p {
+      color: $softBlue;
+      font-weight: 300;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+
+      .value {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $cyan;
+        font-weight: 400;
+
+        img {
+          width: 0.75rem;
+        }
+      }
+
+      .time-limit {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $softBlue;
+
+        img {
+          width: 1rem;
+        }
+      }
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: $lineBlue;
+      margin: 1rem 0;
+    }
+
+    .creator {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 2rem;
+        border: 2px solid white;
+        border-radius: 50%;
+      }
+
+      .attribution {
+        color: $softBlue;
+        font-weight: 300;
+
+        span {
+          color: white;
+          font-weight: 400;
+
+          &:hover {
+            color: $cyan;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
