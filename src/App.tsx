@@ -11,6 +11,7 @@ import ResultsSummary from "./pages/ResultsSummary";
 import ProductPreview from "./pages/ProductPreview";
 import InteractiveRating from "./pages/InteractiveRating";
 import NftPreview from "./pages/NftPreview";
+import NewsletterSignup from "./pages/NewsletterSignup";
 
 import RootLayout from "./layouts/RootLayout";
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="product-preview" element={<ProductPreview />} />
       <Route path="interactive-rating" element={<InteractiveRating />} />
       <Route path="nft-preview" element={<NftPreview />} />
+      <Route path="newsletter-signup" element={<NewsletterSignup />} />
     </Route>
   )
 );

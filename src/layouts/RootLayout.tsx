@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 type RootStyles = {
   backgroundColor: string;
@@ -21,7 +21,7 @@ const rootStyles: StyleOptions = {
   },
   "/results-summary": {
     backgroundColor: "hsl(0, 0%, 100%)",
-    color: "hsl(221, 100%, 96%)",
+    color: "hsl(224, 30%, 27%)",
   },
   "/product-preview": {
     backgroundColor: "hsl(30, 38%, 92%)",
@@ -34,6 +34,10 @@ const rootStyles: StyleOptions = {
   "/nft-preview": {
     backgroundColor: "hsl(217, 54%, 11%)",
     color: "hsl(0, 0%, 100%)",
+  },
+  "/newsletter-signup": {
+    backgroundColor: "hsl(235, 18%, 26%)",
+    color: "hsl(235, 18%, 26%)",
   },
 };
 
@@ -54,6 +58,12 @@ export default function RootLayout() {
       style={{ backgroundColor: styles.backgroundColor, color: styles.color }}
     >
       <div className="root-content">
+        {location.pathname !== "/" && (
+          <Link to=".." style={{ color: styles.color }} className="go-back">
+            Go back
+          </Link>
+        )}
+
         <Outlet />
       </div>
     </main>

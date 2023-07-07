@@ -33,6 +33,11 @@ export default function Home() {
       url: "nft-preview",
       title: "NFT Preview",
     },
+    {
+      id: 6,
+      url: "newsletter-signup",
+      title: "Newsletter Signup",
+    },
   ];
 
   const renderLinks = () => {
