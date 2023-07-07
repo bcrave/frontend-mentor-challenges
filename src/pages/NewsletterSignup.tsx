@@ -43,13 +43,17 @@ export default function NewsletterSignup() {
         <div className="content-body-wrapper">
           <div className="text">
             <h1>Stay updated!</h1>
+
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
             <ul>{renderBenefits()}</ul>
           </div>
           <form>
             <label className="email-input">
               <span>Email address</span>
+
               <input type="email" placeholder="email@company.com" />
+
               <input type="submit" value="Subscribe to monthly newsletter" />
             </label>
           </form>
